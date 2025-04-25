@@ -1,19 +1,18 @@
-## Motivation
-I type everyday of the week.  For five of those seven days, i type for about 6-7 hours.
-It makes sense, removing my will for complacency, that i switch to a more efficient keyboard, if there is one.
-I present to you, Real Programmers Dvorak.
+This is based on [ThePrimeagen's version of Dvorak](https://github.com/ThePrimeagen/keyboards), focused on better supporting macOS.
 
-## Why Dvorak?
-Dvorak comes on evey major OS.
+## Install
+- Download the bundle from this repo
+- Move it to `~/Library/Keyboard Layouts/`
+- Might need to restart for it to be detected
+- Both layouts should show up as an input source
 
-## Why change programmers Dvorak?
-The major problems around PD is that it has a poorly thought out symbol layout.
+## Why are there 2 versions?
+There's 2 versions depending on what you want out of the layout.
 
-* (, ), {, }, [, ]
-** The opening and closing symbols are oddly placed.  It makes so much more sense that finger used to open is the same finger on the closing hand.
+The **dry** version contains only two layers: the regular keys and shifted keys. There's none of the fancy macOS stuff in it.
 
-## Preview
-Base layer:
-![base layer](./rpd.PNG)
-Shift layer:
-![shift layer](./rpd-shift.PNG)
+The **standard** version uses the built-in macOS Dvorak as a base, with the new layout added onto it. This gives you all the macOS features such as:
+- The symbols on the option key layer
+- Correct handling of shifted keys with caps lock
+  - One exception to this rule is the dash key. When in caps lock it will turn into underscore to make typing SNAKE_CASE faster
+- All the [text manipulation features](https://support.apple.com/en-us/102650) on the control layer, so Ctrl-h still functions as backspace and so on
